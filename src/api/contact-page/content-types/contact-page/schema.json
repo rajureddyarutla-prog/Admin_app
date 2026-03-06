@@ -1,0 +1,29 @@
+{
+    "kind": "singleType",
+    "collectionName": "contact_pages",
+    "info": {
+        "singularName": "contact-page",
+        "pluralName": "contact-pages",
+        "displayName": "Contact Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "tag_pill": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "enquiry_areas": {
+            "type": "json"
+        },
+        "locations": {
+            "type": "json"
+        }
+    }
+}

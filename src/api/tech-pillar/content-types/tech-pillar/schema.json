@@ -1,0 +1,23 @@
+{
+    "kind": "collectionType",
+    "collectionName": "tech_pillars",
+    "info": {
+        "singularName": "tech-pillar",
+        "pluralName": "tech-pillars",
+        "displayName": "Tech Pillar"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "label": {
+            "type": "string"
+        },
+        "color": {
+            "type": "string"
+        },
+        "icon_name": {
+            "type": "string"
+        }
+    }
+}

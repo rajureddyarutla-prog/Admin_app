@@ -1,0 +1,35 @@
+{
+    "kind": "singleType",
+    "collectionName": "research_collaboration_pages",
+    "info": {
+        "singularName": "research-collaboration-page",
+        "pluralName": "research-collaboration-pages",
+        "displayName": "Research Collaboration Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "tag_pill": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "partner_categories": {
+            "type": "json"
+        },
+        "grant_areas": {
+            "type": "json"
+        },
+        "trl_framework": {
+            "type": "json"
+        },
+        "validation_pathways": {
+            "type": "json"
+        }
+    }
+}

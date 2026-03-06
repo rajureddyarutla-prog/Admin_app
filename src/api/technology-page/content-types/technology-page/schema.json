@@ -1,0 +1,29 @@
+{
+    "kind": "singleType",
+    "collectionName": "technology_pages",
+    "info": {
+        "singularName": "technology-page",
+        "pluralName": "technology-pages",
+        "displayName": "Technology Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "tag_pill": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "architecture_steps": {
+            "type": "json"
+        },
+        "tech_layers": {
+            "type": "json"
+        }
+    }
+}

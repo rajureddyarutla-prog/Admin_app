@@ -1,0 +1,26 @@
+{
+    "kind": "collectionType",
+    "collectionName": "research_studies",
+    "info": {
+        "singularName": "research-study",
+        "pluralName": "research-studies",
+        "displayName": "Research Study"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "display_id": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "tag": {
+            "type": "string"
+        },
+        "summary": {
+            "type": "text"
+        }
+    }
+}

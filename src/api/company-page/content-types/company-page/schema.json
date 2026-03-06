@@ -1,0 +1,38 @@
+{
+    "kind": "singleType",
+    "collectionName": "company_pages",
+    "info": {
+        "singularName": "company-page",
+        "pluralName": "company-pages",
+        "displayName": "Company Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "tag_pill": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "mission": {
+            "type": "json"
+        },
+        "vision": {
+            "type": "json"
+        },
+        "profile_rows": {
+            "type": "json"
+        },
+        "values": {
+            "type": "json"
+        },
+        "locations": {
+            "type": "json"
+        }
+    }
+}

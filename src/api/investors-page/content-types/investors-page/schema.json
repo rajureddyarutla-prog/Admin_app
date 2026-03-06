@@ -1,0 +1,41 @@
+{
+    "kind": "singleType",
+    "collectionName": "investors_pages",
+    "info": {
+        "singularName": "investors-page",
+        "pluralName": "investors-pages",
+        "displayName": "Investors Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "tag_pill": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "market_stats": {
+            "type": "json"
+        },
+        "market_drivers": {
+            "type": "json"
+        },
+        "moats": {
+            "type": "json"
+        },
+        "trl_levels": {
+            "type": "json"
+        },
+        "ip_roadmap": {
+            "type": "json"
+        },
+        "growth_steps": {
+            "type": "json"
+        }
+    }
+}

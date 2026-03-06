@@ -1,0 +1,36 @@
+{
+    "kind": "collectionType",
+    "collectionName": "pages",
+    "info": {
+        "singularName": "page",
+        "pluralName": "pages",
+        "displayName": "Generic Page",
+        "description": "Create arbitrary pages from the CMS"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "title",
+            "required": true
+        },
+        "hero_title": {
+            "type": "string"
+        },
+        "hero_description": {
+            "type": "text"
+        },
+        "content": {
+            "type": "blocks"
+        },
+        "sections": {
+            "type": "json"
+        }
+    }
+}

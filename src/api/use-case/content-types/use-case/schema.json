@@ -1,0 +1,29 @@
+{
+    "kind": "collectionType",
+    "collectionName": "use_cases",
+    "info": {
+        "singularName": "use-case",
+        "pluralName": "use-cases",
+        "displayName": "Use Case"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "segment": {
+            "type": "string"
+        },
+        "tag": {
+            "type": "string"
+        },
+        "color": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "items": {
+            "type": "json"
+        }
+    }
+}

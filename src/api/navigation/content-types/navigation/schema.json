@@ -1,0 +1,40 @@
+{
+    "kind": "singleType",
+    "collectionName": "navigations",
+    "info": {
+        "singularName": "navigation",
+        "pluralName": "navigations",
+        "displayName": "Navigation",
+        "description": "Global navigation settings"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "logo_text_top": {
+            "type": "string",
+            "default": "Mattera"
+        },
+        "logo_text_bottom": {
+            "type": "string",
+            "default": "Life Systems"
+        },
+        "nav_links": {
+            "type": "json"
+        },
+        "cta_text": {
+            "type": "string",
+            "default": "Access PawOS"
+        },
+        "cta_href": {
+            "type": "string",
+            "default": "https://pawos.app"
+        },
+        "notification": {
+            "type": "json"
+        },
+        "footer_columns": {
+            "type": "json"
+        }
+    }
+}

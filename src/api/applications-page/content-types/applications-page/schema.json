@@ -1,0 +1,26 @@
+{
+    "kind": "singleType",
+    "collectionName": "applications_pages",
+    "info": {
+        "singularName": "applications-page",
+        "pluralName": "applications-pages",
+        "displayName": "Applications Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "tag_pill": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "applications": {
+            "type": "json"
+        }
+    }
+}

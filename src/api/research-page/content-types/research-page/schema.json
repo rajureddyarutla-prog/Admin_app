@@ -1,0 +1,32 @@
+{
+    "kind": "singleType",
+    "collectionName": "research_pages",
+    "info": {
+        "singularName": "research-page",
+        "pluralName": "research-pages",
+        "displayName": "Research Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "tag_pill": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "research_areas": {
+            "type": "json"
+        },
+        "studies": {
+            "type": "json"
+        },
+        "methodology_items": {
+            "type": "json"
+        }
+    }
+}

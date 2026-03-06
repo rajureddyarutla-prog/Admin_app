@@ -1,0 +1,35 @@
+{
+    "kind": "singleType",
+    "collectionName": "platform_pages",
+    "info": {
+        "singularName": "platform-page",
+        "pluralName": "platform-pages",
+        "displayName": "Platform Page"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "tag_pill": {
+            "type": "string"
+        },
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        },
+        "pawos_features": {
+            "type": "json"
+        },
+        "signals": {
+            "type": "json"
+        },
+        "future_hardware": {
+            "type": "json"
+        },
+        "engine_cards": {
+            "type": "json"
+        }
+    }
+}
