@@ -24,6 +24,9 @@
         },
         "tech_layers": {
             "type": "json"
+        },
+        "cta_section": {
+            "type": "json"
         }
     }
 }

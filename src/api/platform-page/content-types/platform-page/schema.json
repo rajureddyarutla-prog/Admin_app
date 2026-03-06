@@ -30,6 +30,9 @@
         },
         "engine_cards": {
             "type": "json"
+        },
+        "cta_section": {
+            "type": "json"
         }
     }
 }

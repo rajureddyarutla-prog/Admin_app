@@ -33,6 +33,9 @@
         },
         "locations": {
             "type": "json"
+        },
+        "careers_section": {
+            "type": "json"
         }
     }
 }

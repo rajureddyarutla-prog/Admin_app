@@ -30,6 +30,9 @@
         },
         "validation_pathways": {
             "type": "json"
+        },
+        "roadmap_section": {
+            "type": "json"
         }
     }
 }

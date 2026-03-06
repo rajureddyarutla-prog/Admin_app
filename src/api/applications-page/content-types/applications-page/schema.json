@@ -21,6 +21,9 @@
         },
         "applications": {
             "type": "json"
+        },
+        "cta_section": {
+            "type": "json"
         }
     }
 }

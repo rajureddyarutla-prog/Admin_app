@@ -36,6 +36,15 @@
         },
         "growth_steps": {
             "type": "json"
+        },
+        "market_opportunity_section": {
+            "type": "json"
+        },
+        "ip_strategy_section": {
+            "type": "json"
+        },
+        "cta_section": {
+            "type": "json"
         }
     }
 }

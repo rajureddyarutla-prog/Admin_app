@@ -18,6 +18,15 @@
     },
     "description": {
       "type": "text"
+    },
+    "vision_section": {
+      "type": "json"
+    },
+    "platform_section": {
+      "type": "json"
+    },
+    "cta_section": {
+      "type": "json"
     }
   }
 }

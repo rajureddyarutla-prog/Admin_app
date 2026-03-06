@@ -446,6 +446,7 @@ export interface ApiApplicationsPageApplicationsPage
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    cta_section: Schema.Attribute.JSON;
     description: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -473,6 +474,7 @@ export interface ApiCompanyPageCompanyPage extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    careers_section: Schema.Attribute.JSON;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -508,6 +510,7 @@ export interface ApiContactPageContactPage extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    contact_details_section: Schema.Attribute.JSON;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -544,15 +547,18 @@ export interface ApiHeroHero extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    cta_section: Schema.Attribute.JSON;
     description: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::hero.hero'> &
       Schema.Attribute.Private;
+    platform_section: Schema.Attribute.JSON;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    vision_section: Schema.Attribute.JSON;
   };
 }
 
@@ -570,9 +576,11 @@ export interface ApiInvestorsPageInvestorsPage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    cta_section: Schema.Attribute.JSON;
     description: Schema.Attribute.Text;
     growth_steps: Schema.Attribute.JSON;
     ip_roadmap: Schema.Attribute.JSON;
+    ip_strategy_section: Schema.Attribute.JSON;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -580,6 +588,7 @@ export interface ApiInvestorsPageInvestorsPage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     market_drivers: Schema.Attribute.JSON;
+    market_opportunity_section: Schema.Attribute.JSON;
     market_stats: Schema.Attribute.JSON;
     moats: Schema.Attribute.JSON;
     publishedAt: Schema.Attribute.DateTime;
@@ -648,6 +657,7 @@ export interface ApiNavigationNavigation extends Struct.SingleTypeSchema {
       'api::navigation.navigation'
     > &
       Schema.Attribute.Private;
+    logo_image: Schema.Attribute.Media<'images'>;
     logo_text_bottom: Schema.Attribute.String &
       Schema.Attribute.DefaultTo<'Life Systems'>;
     logo_text_top: Schema.Attribute.String &
@@ -706,6 +716,7 @@ export interface ApiPlatformPagePlatformPage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    cta_section: Schema.Attribute.JSON;
     description: Schema.Attribute.Text;
     engine_cards: Schema.Attribute.JSON;
     future_hardware: Schema.Attribute.JSON;
@@ -751,6 +762,7 @@ export interface ApiResearchCollaborationPageResearchCollaborationPage
       Schema.Attribute.Private;
     partner_categories: Schema.Attribute.JSON;
     publishedAt: Schema.Attribute.DateTime;
+    roadmap_section: Schema.Attribute.JSON;
     tag_pill: Schema.Attribute.String;
     title: Schema.Attribute.String;
     trl_framework: Schema.Attribute.JSON;
@@ -783,6 +795,7 @@ export interface ApiResearchPageResearchPage extends Struct.SingleTypeSchema {
     > &
       Schema.Attribute.Private;
     methodology_items: Schema.Attribute.JSON;
+    publications_section: Schema.Attribute.JSON;
     publishedAt: Schema.Attribute.DateTime;
     research_areas: Schema.Attribute.JSON;
     studies: Schema.Attribute.JSON;
@@ -872,6 +885,7 @@ export interface ApiTechnologyPageTechnologyPage
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    cta_section: Schema.Attribute.JSON;
     description: Schema.Attribute.Text;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<

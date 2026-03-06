@@ -16,6 +16,19 @@ export default {
         try {
             console.log('Fetching GA data for property:', propertyId);
 
+            // Fetch Real-time Active Users
+            let totalActiveUsers = '0';
+            try {
+                const [realtimeReport] = await analyticsDataClient.runRealtimeReport({
+                    property: `properties/${propertyId}`,
+                    metrics: [{ name: 'activeUsers' }],
+                });
+                totalActiveUsers = realtimeReport.rows?.[0]?.metricValues?.[0]?.value || '0';
+                console.log(`Real-time active users fetched: ${totalActiveUsers}`);
+            } catch (rtError) {
+                console.error('Real-time API error:', rtError.message);
+            }
+
             const [visitorReport] = await analyticsDataClient.runReport({
                 property: `properties/${propertyId}`,
                 dateRanges: [{ startDate: '30daysAgo', endDate: 'today' }],
@@ -53,7 +66,7 @@ export default {
             return {
                 dailyStats: dailyStats.sort((a, b) => (a.date > b.date ? 1 : -1)),
                 topPages,
-                totalActiveUsers: visitorReport.totals?.[0]?.metricValues?.[0]?.value || '0',
+                totalActiveUsers: totalActiveUsers,
             };
 
         } catch (error) {

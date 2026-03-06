@@ -27,6 +27,9 @@
         },
         "methodology_items": {
             "type": "json"
+        },
+        "publications_section": {
+            "type": "json"
         }
     }
 }

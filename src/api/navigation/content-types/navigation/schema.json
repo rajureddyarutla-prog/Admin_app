@@ -35,6 +35,14 @@
         },
         "footer_columns": {
             "type": "json"
+        },
+        "logo_image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
         }
     }
 }

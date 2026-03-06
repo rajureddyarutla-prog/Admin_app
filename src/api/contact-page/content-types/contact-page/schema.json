@@ -24,6 +24,9 @@
         },
         "locations": {
             "type": "json"
+        },
+        "contact_details_section": {
+            "type": "json"
         }
     }
 }
