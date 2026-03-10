@@ -4,6 +4,9 @@ import { ChartPie } from '@strapi/icons';
 export default {
   config: {
     locales: [],
+    head: {
+      favicon: '/favicon.png',
+    },
   },
   bootstrap(app: StrapiApp) {
     app.addMenuLink({
