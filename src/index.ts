@@ -1,7 +1,24 @@
 import { type Core } from '@strapi/strapi';
 
 export default {
-  register(/* { strapi }: { strapi: Core.Strapi } */) { },
+  register({ strapi }: { strapi: any }) {
+    // Configure Preview URLs for content types
+    // This helps resolve the 404 error by providing a target for the Preview button
+    const previewUrls = {
+      'api::company-page.company-page': 'https://matteralifesystems.com/company',
+      'api::technology-page.technology-page': 'https://matteralifesystems.com/technology',
+      'api::platform-page.platform-page': 'https://matteralifesystems.com/platform',
+      'api::applications-page.applications-page': 'https://matteralifesystems.com/applications',
+      'api::research-page.research-page': 'https://matteralifesystems.com/research',
+      'api::investors-page.investors-page': 'https://matteralifesystems.com/investors',
+      'api::contact-page.contact-page': 'https://matteralifesystems.com/contact',
+      'api::research-collaboration-page.research-collaboration-page': 'https://matteralifesystems.com/research-collaboration',
+    };
+
+    // Note: In Strapi 5, the preview URL can be set in the Content Manager settings in the Admin Panel.
+    // Go to: Content Manager -> Click a Content-Type -> Click the "Gear" icon (Configure the view)
+    // Scroll down to "Preview URL" and paste the corresponding URL from above.
+  },
 
   async bootstrap({ strapi }: { strapi: Core.Strapi }) {
     strapi.log.info('Bootstrap: Starting seeding...');
