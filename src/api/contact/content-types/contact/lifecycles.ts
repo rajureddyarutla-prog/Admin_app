@@ -1,8 +1,8 @@
 import { Core } from '@strapi/strapi';
 
 export default {
-    async afterCreate(event) {
-        const { result } = event;
+    async afterCreate(event: any) {
+        const { result, strapi } = event;
 
         try {
             await strapi.plugins['email'].services.email.send({
