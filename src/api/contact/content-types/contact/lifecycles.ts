@@ -3,10 +3,9 @@ import { Core } from '@strapi/strapi';
 export default {
     async afterCreate(event) {
         const { result } = event;
-        const { strapi } = event.model as any; // Access strapi instance if needed, or use global
 
         try {
-            await (strapi as any).plugins['email'].services.email.send({
+            await strapi.plugins['email'].services.email.send({
                 to: 'info@matteralifesystems.com',
                 from: 'info@matteralifesystems.com',
                 subject: `New Enquiry from ${result.name}`,
