@@ -479,5 +479,31 @@ export default {
     } catch (err) {
       strapi.log.error('Failed to set public permissions:', err);
     }
+
+    // Register Contact Lifecycle Hooks
+    strapi.db.lifecycles.subscribe({
+      models: ['api::contact.contact'],
+      async afterCreate(event) {
+        const { result } = event;
+        try {
+          await strapi.plugins['email'].services.email.send({
+            to: 'info@matteralifesystems.com',
+            from: 'info@matteralifesystems.com',
+            subject: `New Enquiry from ${result.name}`,
+            text: `
+              New enquiry received:
+              Name: ${result.name}
+              Email: ${result.email}
+              Organisation: ${result.organisation}
+              Type: ${result.type}
+              Message: ${result.message}
+            `,
+          });
+          strapi.log.info(`Email sent successfully for contact: ${result.id}`);
+        } catch (err) {
+          strapi.log.error(`Email Error: ${err.message}`);
+        }
+      },
+    });
   },
 };
